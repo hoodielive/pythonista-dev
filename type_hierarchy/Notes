@@ -1,0 +1,50 @@
+Type Hierarchy
+
+Numbers 
+
+Integral 
+1. Integers 
+2. Booleans 
+
+Non-Integral 
+1. Floats (c doubles)
+2. Decimals 
+3. Complex 
+4. Fractions
+
+Collections 
+
+Sequences:
+	- Mutables 
+		1. Lists 
+
+	- Immutable
+		1. Tuples
+		2. Strings
+
+Sets:
+	- Mutable
+		1. Sets 
+	
+	- Immutable 
+		1. Frozen Sets 
+
+Mappings:
+	1. Dictionaries
+
+
+Callables (anything that you can invoke or call)
+1. User-Defined Functions
+2. Generators
+3. Classes
+4. Instance Methods
+5. Class Instances(__call__())
+6. Built-in Functions (e.g. len(), open())
+7. Built-in Methods (e.g. my_list.append(x))
+
+Singletons
+1. None
+2. NotImplemented
+3. Ellipsis(...)
+
+

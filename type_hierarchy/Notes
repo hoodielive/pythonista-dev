@@ -48,3 +48,74 @@ Singletons
 3. Ellipsis(...)
 
 
+Multiline Commments 
+- Physical lines of code end with a physical newline character. 
+- Logical lines of code end with a logical NEWLINE token
+- tokenized
+
+Physical vs Logical Newline:
+Sometimes, physical newlines are ignored in order to combine multiple 
+physical lines into a single logical line of code terminated by a logical
+NEWLINE token. 
+
+Conversion can be implicit or explicit. 
+
+Implicit:
+list literals: []
+tuplie literals: ()
+dictionary literals: {}
+set literals: {}
+function arguments / parameters 
+* support inline comments.
+
+List literals: 
+[1,
+ 2, 
+ 3]
+
+ [1, #item 1
+  2, #item 2
+	3  #item 3
+ ]
+
+ def my_func(a,
+             b, # comment
+						 c: ):
+	print(a, b, c)
+
+Explicit: 
+You can break up statements over multiple lines explicitly, by using the \ (backslash) character. 
+Multiline statements are not implicitly converted to a single logical line. 
+
+# Will NOT work!!
+if a 
+   and b 
+	 and c: 
+
+# Will work: 
+if a \ 
+   and b \ 
+	 and c:
+
+* Comments cannot be a part of a statement, not even a multi-line statement in the explicit. 
+
+# Will Not work: 
+if a \ 
+   and b \ # comment 
+	 and c:
+
+
+Multi-Line String literals: 
+'''
+
+'''
+
+or 
+
+"""
+
+"""
+
+'''This is 
+a multiline string'''
+

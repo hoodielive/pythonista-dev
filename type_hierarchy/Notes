@@ -119,3 +119,21 @@ or
 '''This is 
 a multiline string'''
 
+
+Variable Names
+
+_ Convention to indicate 'internal use' or 'private' objects. Objects named this way will not get imported by a statement such as:
+from module import *
+
+__ Used to mangle class attributes - useful in inheritance chains
+
+__my__ Used for system-defined names that have a special meaning to the interpreter. Don't invent them, stick to the ones pre-defined by Python.
+
+Other Variable Naming Conventions
+
+Packages - short, all-lowercase names. Preferably no underscores. 
+Modules - short, all-lowercase names. Can have underscores.
+Classes - CapWords (upper camel case) convention.
+Functions - lowercase, words separated by underscores (snake_case).
+Variables - lowercase, words separated by underscores (snake_case).
+Constants - All uppercase, words separated by underscores.
